@@ -1,5 +1,5 @@
 import pygame
-import os
+import os #Importar os så att jag kan hitta bilderna i assets-mappen
 
 
 #Fixa så att man flyttar flera kort när man flyttar högsta
@@ -14,7 +14,7 @@ import os
 WIDTH, HEIGHT = 1000, 650
 WIN = pygame.display.set_mode((WIDTH, HEIGHT))
 pygame.display.set_caption("Patiens") #Namnet på fönstret
-fps = 240
+fps = 240 #240Hz, snabba grejer
 CARD_WIDTH, CARD_HEIGHT = 80, 120
 
 
@@ -34,7 +34,6 @@ RKUNG = pygame.image.load(
     os.path.join('Assets', 'ruterkung.png')
 )
 RESIZED_RKUNG = pygame.transform.scale(RKUNG, (80, 120))
-RKUNG_POS = (200, 10)
 
 
 HDAM = pygame.image.load(
